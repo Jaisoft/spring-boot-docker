@@ -55,6 +55,19 @@ this filesystem is provided by a Docker image.
 - Docker run
 
 
+docker pull
+
+docker run
+
+docker start
+
+docker ps -a   = list container
+
+docker images
+
+docker image prune -a
+
+
 
 
 
