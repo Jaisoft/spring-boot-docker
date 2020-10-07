@@ -1,0 +1,67 @@
+- Docker concepts
+
+Docker is a platform for developers and sysadmins to build, run, and share applications 
+with containers. 
+
+Containerization are:
+
+    Flexible: 
+    Lightweight: 
+    Portable: 
+    Loosely Couple:
+    Scalable: 
+    Secure: 
+
+
+- Image
+
+An image includes everything needed to run an application - the code or binary, runtimes, 
+dependencies, and any other filesystem objects required.
+
+- Container
+
+Running process, with encapsulation features applied to it in order to keep it isolated from 
+the host and from other containers. That each container interacts with its own private filesystem; 
+this filesystem is provided by a Docker image. 
+
+- Test Docker version
+
+        $ docker --version
+
+- List all images
+
+        $ docker images
+
+- List containers
+
+        $ docker ps
+
+- Delete all images
+
+        $ docker rmi $(docker images -q)
+
+- Stop all containers
+
+        $ docker stop $(docker ps -a -q)
+
+- Delete all containers
+
+        $ docker rm $(docker ps -a -q)
+
+- Build image with Dockerfile on the project directory
+
+        $ docker build -t docker-docs-image .
+
+- Docker run
+
+
+
+
+
+
+
+
+
+
+
+
